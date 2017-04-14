@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feed1" />
+
+    <LinearLayout android:padding="@dimen/pad_5dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/txt_18sp" android:textStyle="bold" android:textColor="@color/main_color_gray_dk" android:id="@id/lbl1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" />
+            <TextView android:textSize="@dimen/txt_12sp" android:textStyle="bold" android:textColor="@color/main_color_gray" android:id="@id/lbl2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pad_3dp" android:text="TextView" />
+            <TextView android:textSize="@dimen/txt_12sp" android:textColor="@color/main_color_gray" android:id="@id/lbl3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/lbl4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:drawableLeft="@drawable/ic_bed" style="@style/lbl_feed" />
+                <TextView android:id="@id/lbl5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pad_5dp" android:layout_marginRight="@dimen/pad_5dp" android:text="0" android:drawableLeft="@drawable/ic_bath" style="@style/lbl_feed" />
+                <TextView android:id="@id/lbl6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:drawableLeft="@drawable/ic_car" style="@style/lbl_feed" />
+            </LinearLayout>
+
+            <ImageView android:id="@+id/img2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pad_10dp" android:src="@drawable/belle_icon" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

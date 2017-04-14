@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom" android:background="@color/white_smoke" android:paddingLeft="@dimen/pad_15dp" android:paddingTop="@dimen/pad_5dp" android:paddingRight="@dimen/pad_15dp" android:paddingBottom="@dimen/pad_10dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/enter_address" android:ems="10" android:drawableLeft="@drawable/ic_search_small" android:inputType="textPersonName" style="@style/edittext" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/sd" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.gms.maps.MapView android:id="@id/map" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <Button android:id="@id/btnSearch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_area" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/blue_btn" />
+    </RelativeLayout>
+</LinearLayout>

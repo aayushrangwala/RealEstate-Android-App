@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.gms.maps.MapView android:id="@id/map" android:layout_width="fill_parent" android:layout_height="@dimen/pad_125dp" />
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:cacheColorHint="@color/transparent" android:divider="@color/gray_light" android:dividerHeight="@dimen/divider" android:layout_weight="1.0" android:footerDividersEnabled="true" />
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white_smoke_dk" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:enabled="false" android:id="@id/tab1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/buy" android:layout_weight="1.0" style="@style/tab_btn" />
+        <View android:id="@id/view1" android:layout_width="@dimen/divider" android:layout_height="fill_parent" style="@style/tab_divider" />
+        <Button android:id="@id/tab2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/rent" android:layout_weight="1.0" style="@style/tab_btn" />
+    </LinearLayout>
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@id/buy1" android:padding="@dimen/pad_10dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/lbl" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/price_range" android:layout_weight="1.0" style="@style/lbl_search1" />
+                <TextView android:id="@id/lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$900K to $1.5M" style="@style/lbl_search1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/rent1" android:padding="@dimen/pad_10dp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/lbl" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/rante_range" android:layout_weight="1.0" style="@style/lbl_search1" />
+                <TextView android:id="@id/lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$250 to $750" style="@style/lbl_search1" />
+            </LinearLayout>
+            <View android:id="@id/view2" android:background="@color/gray_light" android:layout_width="fill_parent" android:layout_height="@dimen/divider" />
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/pad_10dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/lbl" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/property_type" android:layout_weight="1.0" style="@style/lbl_search1" />
+                <TextView android:id="@id/lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Any" style="@style/lbl_search1" />
+            </LinearLayout>
+            <View android:id="@id/view2" android:background="@color/gray_light" android:layout_width="fill_parent" android:layout_height="@dimen/divider" />
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/pad_10dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/lbl" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/bedrooms" android:layout_weight="1.0" style="@style/lbl_search1" />
+                <TextView android:id="@id/lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2 to 5" style="@style/lbl_search1" />
+            </LinearLayout>
+            <View android:id="@id/view2" android:background="@color/gray_light" android:layout_width="fill_parent" android:layout_height="@dimen/divider" />
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/pad_10dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/lbl" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/bathrooms" android:layout_weight="1.0" style="@style/lbl_search1" />
+                <TextView android:id="@id/lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2+" style="@style/lbl_search1" />
+            </LinearLayout>
+            <View android:id="@id/view2" android:background="@color/gray_light" android:layout_width="fill_parent" android:layout_height="@dimen/divider" />
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/pad_10dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/lbl" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/parking_spaces" android:layout_weight="1.0" style="@style/lbl_search1" />
+                <TextView android:id="@id/lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1+" style="@style/lbl_search1" />
+            </LinearLayout>
+            <View android:id="@id/view2" android:background="@color/gray_light" android:layout_width="fill_parent" android:layout_height="@dimen/divider" />
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/pad_10dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/lbl" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/sort" android:layout_weight="1.0" style="@style/lbl_search1" />
+                <TextView android:id="@id/lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Most Relevant" style="@style/lbl_search1" />
+            </LinearLayout>
+            <View android:id="@id/view2" android:background="@color/gray_light" android:layout_width="fill_parent" android:layout_height="@dimen/divider" />
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/pad_10dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/lbl" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/min_land" android:layout_weight="1.0" style="@style/lbl_search1" />
+                <TextView android:id="@id/lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Any" style="@style/lbl_search1" />
+            </LinearLayout>
+            <View android:id="@id/view2" android:background="@color/gray_light" android:layout_width="fill_parent" android:layout_height="@dimen/divider" />
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/pad_10dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/lbl" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/surroun_sberb" android:layout_weight="1.0" style="@style/lbl_search1" />
+                <CheckBox android:id="@id/checkBox1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/checkbox" />
+            </LinearLayout>
+            <View android:id="@id/view2" android:background="@color/gray_light" android:layout_width="fill_parent" android:layout_height="@dimen/divider" />
+            <LinearLayout android:orientation="vertical" android:id="@id/rent2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:padding="@dimen/pad_10dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/lbl" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/furnished" android:layout_weight="1.0" style="@style/lbl_search1" />
+                    <CheckBox android:id="@id/checkBox1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/checkbox" />
+                </LinearLayout>
+                <View android:id="@id/view2" android:background="@color/gray_light" android:layout_width="fill_parent" android:layout_height="@dimen/divider" />
+                <LinearLayout android:orientation="horizontal" android:padding="@dimen/pad_10dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/lbl" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/pets_allow" android:layout_weight="1.0" style="@style/lbl_search1" />
+                    <CheckBox android:id="@id/checkBox1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox" />
+                </LinearLayout>
+                <View android:id="@id/view2" android:background="@color/gray_light" android:layout_width="fill_parent" android:layout_height="@dimen/divider" />
+                <LinearLayout android:orientation="horizontal" android:padding="@dimen/pad_10dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/lbl" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/smoke_permit" android:layout_weight="1.0" style="@style/lbl_search1" />
+                    <CheckBox android:id="@id/checkBox1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox" />
+                </LinearLayout>
+                <View android:id="@id/view2" android:background="@color/gray_light" android:layout_width="fill_parent" android:layout_height="@dimen/divider" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@id/btnSearch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_now" style="@style/green_btn" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/footer" android:paddingTop="@dimen/pad_10dp" android:paddingBottom="@dimen/pad_10dp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/blue_btn">
+    <TextView android:id="@id/btnMore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Load More (85)" style="@style/green_border_btn" />
+</LinearLayout>
